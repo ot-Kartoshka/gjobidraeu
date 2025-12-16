@@ -21,10 +21,10 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     - name: Restore NuGet Packages
-      run: nuget restore Lab4.sln
+      run: nuget restore Lab4_test/packages.config -SolutionDirectory .
 
     - name: Build Solution
-      run: msbuild Lab4.sln /p:Configuration=Release /p:Platform=x64
+      run: msbuild Lab4_test/Lab4_test.vcxproj /p:Configuration=Release /p:Platform=x64
 
     - name: Run Unit Tests
       run: |
