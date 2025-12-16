@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <random>
 
-#include "../Lab4/GF281.cpp" 
+#include "../Lab4/GF281.h" 
 
 std::string randomBitString() {
     std::string s = "";
